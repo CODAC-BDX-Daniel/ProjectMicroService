@@ -2,9 +2,10 @@ import React, {useState} from "react";
 import axios from "axios";
 import Cookies from 'js-cookie'
 
+
 const SignInForm = () => {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState("daniel");
+    const [password, setPassword] = useState("daniel");
 
     const handleLogin = (e) => {
         e.preventDefault();

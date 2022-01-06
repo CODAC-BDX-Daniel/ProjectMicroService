@@ -3,18 +3,16 @@ import axios from "axios";
 import Cookies from 'js-cookie';
 
 const Logout = () => {
-    const removeCookie = (key) => {
-        if (window !== "undefined") {
-            Cookies.remove('access_token');
-        }
-    };
 
+const ButtonLogout = () => {
+        Cookies.remove('access_token');
+        window.location.reload(false)
+    }
+    return <div className="logoutNavigation">
 
-    return (
-        <button onClick={Logout}/>
+        <div onClick={ButtonLogout} activeClassName="logout-nav-active">Logout</div>
 
-
-    );
-};
+    </div>
+}
 
 export default Logout;

@@ -3,26 +3,34 @@ import Logo from "../components/Logo";
 import Countries from "../components/Countries";
 import Log from "../components/log";
 import Jokes from "../components/Jokes";
-import Logout from "../components/log/Logout";
-import React from "react";
-import Cookies from "js-cookie";
 
-const Token = Cookies.get('access_token')
+import Weathers from "../components/Weather/Weathers";
+import { useEffect } from "react";
+
+import React from "react";
+
 
 const Home = ()=> {
+
+
+    // useEffect(() => {
+    //         console.log("test");
+    //     }, [])   
+    const isLoading=localStorage.getItem("isLoading");
     return (
         <div className="home">
-            <Logo/>
-            <br/>
+
             <Navigation/>
-            {Token ? <div>
-
+           
+            {/* <Log signin={true} signup={false}/> */}
+           {isLoading ? <div className="widgets">
                 <Jokes/>
+                <Weathers/>
+            </div> : 
+            <h2>Not connected</h2>}
+            
+            
 
-            </div> : (
-            <div>
-            <Log signin={true} signup={false}/>
-                <br/>
 
             </div>)}
 

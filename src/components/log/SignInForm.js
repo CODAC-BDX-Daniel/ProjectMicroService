@@ -5,7 +5,7 @@ import Cookies from 'js-cookie'
 const SignInForm = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-
+    console.log("ici");
     const handleLogin = (e) => {
         e.preventDefault();
 
@@ -14,9 +14,12 @@ const SignInForm = () => {
             password
         })
             .then((res) => {
-
-                     Cookies.set('access_token',res.data.access_token)
-                window.location = "/";
+                    Cookies.set('access_token',res.data.access_token);
+                    localStorage.setItem("Joke", JSON.stringify(res.data.Joke));
+                    localStorage.setItem("Weathers", JSON.stringify(res.data.Weathers));
+                    localStorage.setItem("isLoading", true);
+                    
+                    window.location = "/";
             })
             .catch((err) => {
                 console.log(err);

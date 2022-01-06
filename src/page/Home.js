@@ -3,8 +3,12 @@ import Logo from "../components/Logo";
 import Countries from "../components/Countries";
 import Log from "../components/log";
 import Jokes from "../components/Jokes";
+
 import Weathers from "../components/Weather/Weathers";
 import { useEffect } from "react";
+
+import React from "react";
+
 
 const Home = ()=> {
 
@@ -15,6 +19,7 @@ const Home = ()=> {
     const isLoading=localStorage.getItem("isLoading");
     return (
         <div className="home">
+
             <Navigation/>
            
             {/* <Log signin={true} signup={false}/> */}
@@ -26,6 +31,8 @@ const Home = ()=> {
             
             
 
+
+            </div>)}
 
         </div>
     );

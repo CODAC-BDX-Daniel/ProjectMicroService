@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import SignUpForm from "./SignUpForm";
 import SignInForm from "./SignInForm";
+
 import Cookies from 'js-cookie';
-import { memo } from "react";
+
 
 const Log = ( props) => {
     const [signUpModal, setSignUpModal] = useState(props.signup);
@@ -33,4 +34,4 @@ const Log = ( props) => {
     );
 };
 
-export default memo(Log);
+export default Log;

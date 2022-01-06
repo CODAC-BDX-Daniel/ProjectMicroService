@@ -2,10 +2,10 @@ import React, {useState} from "react";
 import axios from "axios";
 import Cookies from 'js-cookie'
 
+
 const SignInForm = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    console.log("ici");
     const handleLogin = (e) => {
         e.preventDefault();
 

@@ -1,6 +1,11 @@
+
+
+
+
 .widgets{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+
     gap:2rem;
     .Joke{
         width: 20rem;
@@ -43,5 +48,17 @@
             }
             
         }
+    }
+    .Youtube{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .favori{
+             display: flex;
+            flex-direction: column;
+            gap:1rem;
+            
+        }
+
     }
 }

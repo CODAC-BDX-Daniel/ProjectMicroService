@@ -1,13 +1,14 @@
 import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
-import Countries from "../components/Countries";
-import Log from "../components/log";
+// import Logo from "../components/Logo";
+// import Countries from "../components/Countries";
+// import Log from "../components/log";
 import Jokes from "../components/Jokes";
 
 import Weathers from "../components/Weather/Weathers";
 import { useEffect } from "react";
 
 import React from "react";
+import Youtube from "../components/Youtube/Youtube";
 
 
 const Home = ()=> {
@@ -25,9 +26,10 @@ const Home = ()=> {
             {/* <Log signin={true} signup={false}/> */}
            {isLoading ? 
            <div className="widgets">
-             
-                <Jokes/>
-                <Weathers/>
+                    <Jokes/>
+                    <Youtube/>
+                    <Weathers/>
+                
             </div> : 
             <h2>Not connected</h2>}
             

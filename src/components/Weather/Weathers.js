@@ -3,7 +3,7 @@ import Weather from "./Wheather";
 function Weathers() {
     
   const ArrWeathers = JSON.parse(localStorage.getItem("Weathers"));
-  console.log(ArrWeathers);
+  // console.log(ArrWeathers);
   return (
       <div className="Weathers">
 

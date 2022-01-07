@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 import React from "react";
 import Youtubeconnection from "../components/Youtubeconnection";
+import {NavLink} from "react-router-dom";
 
 
 const Home = ()=> {
@@ -31,7 +32,9 @@ const Home = ()=> {
                 <Weathers/>
 
             </div> :
-            <h2>Not connected</h2>}
+               <NavLink exact to="/Profil" className="profil-page">
+                   <button className="btn-validation">Veuillez vous connectez ou inscrivez vous !!!</button>
+               </NavLink>}
 
 
 

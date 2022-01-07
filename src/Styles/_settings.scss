@@ -30,3 +30,43 @@ a {
 a:visited {
   color: $color-3;
 }
+
+  .btn-validation {
+    border-radius: 4px;
+    background-color: #2691c7;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btn-validation span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn-validation span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn-validation:hover span {
+    padding-right: 25px;
+  }
+
+  .btn-validation:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+

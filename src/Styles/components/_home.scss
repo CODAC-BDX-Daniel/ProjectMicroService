@@ -1,0 +1,64 @@
+
+
+
+
+.widgets{
+    display: grid;
+    width: 100%;
+
+    gap:2rem;
+    .Joke{
+        width: 20rem;
+        width : 20rem;
+        min-height: 20rem;
+        max-height: 25rem;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        .blague{
+            font-size: xx-large;
+        }
+        .chute{
+            font-style: italic;
+        }
+        padding: 2rem;
+        gap:2rem;
+    }
+    .Weathers{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+        .Weather{
+            
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+            border:1px solid black;
+            padding: 1rem;
+            .byDate{
+                border: 1px solid blue;
+                height: 10rem;
+                padding: 1rem;
+                width:11rem;
+                height: 7rem;
+                span{
+                    font-size: 15px;
+                    font-style: italic;
+                }
+            }
+            
+        }
+    }
+    .Youtube{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .favori{
+             display: flex;
+            flex-direction: column;
+            gap:1rem;
+            
+        }
+
+    }
+}

@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
             <Navigation/>
-            <Logo/>
+            
        <h1>About</h1>
             <br/>
             <p>Il était une fois une application à rendre avant la fin de la semaine.

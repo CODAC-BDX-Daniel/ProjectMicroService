@@ -1,5 +1,5 @@
 function WeatherByDate(props) {
-  console.log(props.byDate)
+  // console.log(props.byDate)
   return (
     <div className="byDate">
     <p><span>Date : </span>{props.byDate.applicable_date}</p>

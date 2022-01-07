@@ -17,6 +17,7 @@ const SignInForm = () => {
                     Cookies.set('access_token',res.data.access_token);
                     localStorage.setItem("Joke", JSON.stringify(res.data.Joke));
                     localStorage.setItem("Weathers", JSON.stringify(res.data.Weathers));
+                    localStorage.setItem("Youtube", JSON.stringify(res.data.Youtube.items));
                     localStorage.setItem("isLoading", true);
                     
                     window.location = "/";

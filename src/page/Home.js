@@ -3,11 +3,14 @@ import Navigation from "../components/Navigation";
 // import Countries from "../components/Countries";
 // import Log from "../components/log";
 import Jokes from "../components/Jokes";
-
 import Weathers from "../components/Weather/Weathers";
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
+import Select from "react-select";
+import makeAnimated from 'react-select/animated';
+import Weather from "../components/Weather/Wheather";
 
 import React from "react";
+import weathers from "../components/Weather/Weathers";
 
 import Youtubeconnection from "../components/Youtubeconnection";
 
@@ -21,8 +24,12 @@ const Home = ()=> {
     // useEffect(() => {
     //         console.log("test");
     //     }, [])
+
+
+
     const isLoading=localStorage.getItem("isLoading");
     return (
+
         <div className="home">
 
             <Navigation/>

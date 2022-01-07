@@ -23,7 +23,9 @@ const Home = ()=> {
             <Navigation/>
            
             {/* <Log signin={true} signup={false}/> */}
-           {isLoading ? <div className="widgets">
+           {isLoading ? 
+           <div className="widgets">
+             
                 <Jokes/>
                 <Weathers/>
             </div> : 
@@ -32,7 +34,7 @@ const Home = ()=> {
             
 
 
-            </div>)}
+         
 
         </div>
     );

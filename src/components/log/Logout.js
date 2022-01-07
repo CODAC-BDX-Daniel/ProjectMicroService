@@ -6,11 +6,12 @@ const Logout = () => {
 
 const ButtonLogout = () => {
         Cookies.remove('access_token');
+        localStorage.clear();
         window.location.reload(false)
     }
     return <div className="logoutNavigation">
 
-        <div onClick={ButtonLogout} activeClassName="logout-nav-active">Logout</div>
+        <div onClick={ButtonLogout} >Logout</div>
 
     </div>
 }

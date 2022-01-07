@@ -15,7 +15,7 @@ const Profil = () => {
         <div>
             <Navigation/>
         <div className="profil-page">
-            {Token ? <h1><Logout/></h1> : (
+            {Token ? <h1></h1> : (
             <div className="log-container">
                 <Log signin={false} signup={true}/>
 

@@ -10,19 +10,14 @@ const Navigation = () => {
             <NavLink exact to="/" activeClassName="nav-active">
           Accueil
             </NavLink>
-            <NavLink exact to="/Profil" activeClassName="nav-active">
+            {Token ? <div></div>:<NavLink exact to="/Profil" activeClassName="nav-active">
                 Profil
-            </NavLink>
-            <NavLink exact to="/User" activeClassName="nav-active">
-                User
-            </NavLink>
-            <NavLink exact to="/Admin" activeClassName="nav-active">
-                Admin
-            </NavLink>
+            </NavLink>}
+
             <NavLink exact to="/About" activeClassName="nav-active">
           About
             </NavLink>
-            {Token ? <div><Logout/></div>:""}
+            {Token ? <div className="btn_logout"><button className="btn-validation"><Logout/></button></div>:""}
         </div>
     );
 };

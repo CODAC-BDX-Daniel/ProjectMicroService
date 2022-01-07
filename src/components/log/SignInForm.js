@@ -19,7 +19,7 @@ const SignInForm = () => {
                     localStorage.setItem("Weathers", JSON.stringify(res.data.Weathers));
                     localStorage.setItem("Youtube", JSON.stringify(res.data.Youtube.items));
                     localStorage.setItem("isLoading", true);
-                    
+
                     window.location = "/";
             })
             .catch((err) => {
@@ -51,7 +51,7 @@ const SignInForm = () => {
                 value={password}
             />
             <br/>
-            <input type="submit" value="Se connecter"/>
+            <button className="btn-validation" type="submit">Se connecter</button>
         </form>
     );
 };

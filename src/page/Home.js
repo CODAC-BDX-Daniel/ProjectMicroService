@@ -13,6 +13,7 @@ import React from "react";
 import weathers from "../components/Weather/Weathers";
 
 import Youtubeconnection from "../components/Youtubeconnection";
+import {NavLink} from "react-router-dom";
 
 import Youtube from "../components/Youtube/Youtube";
 
@@ -45,7 +46,10 @@ const Home = ()=> {
 
             </div> :
 
-            <h2>Not connected</h2>}
+               <NavLink exact to="/Profil" className="profil-page">
+                   <button className="btn-validation">Veuillez vous connectez ou inscrivez vous !!!</button>
+               </NavLink>}
+
 
 
 

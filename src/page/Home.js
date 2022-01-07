@@ -38,7 +38,7 @@ const Home = ()=> {
             {/* <Log signin={true} signup={false}/> */}
            {isLoading ?
            <div className="widgets">
-<
+
                <Youtubeconnection/>
                 <Jokes/>
                 <Weathers/>

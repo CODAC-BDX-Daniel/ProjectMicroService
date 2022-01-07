@@ -8,6 +8,7 @@ import Weathers from "../components/Weather/Weathers";
 import { useEffect } from "react";
 
 import React from "react";
+import Youtubeconnection from "../components/Youtubeconnection";
 
 
 const Home = ()=> {
@@ -15,26 +16,27 @@ const Home = ()=> {
 
     // useEffect(() => {
     //         console.log("test");
-    //     }, [])   
+    //     }, [])
     const isLoading=localStorage.getItem("isLoading");
     return (
         <div className="home">
 
             <Navigation/>
-           
+
             {/* <Log signin={true} signup={false}/> */}
-           {isLoading ? 
+           {isLoading ?
            <div className="widgets">
-             
+               <Youtubeconnection/>
                 <Jokes/>
                 <Weathers/>
-            </div> : 
+
+            </div> :
             <h2>Not connected</h2>}
-            
-            
 
 
-         
+
+
+
 
         </div>
     );
